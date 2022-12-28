@@ -15,7 +15,12 @@ struct WeatherView: View {
             Spacer()
             VStack {
                 VStack(alignment: .leading, spacing: 5) {
-                    Text(weather.name)
+                    Text("Welcome to the Weather App")
+                        .bold().font(.title2)
+                        .padding(.top)
+                    WeatherSearchBar()
+                        .padding(.vertical)
+                    Text(weather.name!)
                         .bold().font(.title)
                     
                     Text("Today \(Date().formatted(.dateTime.month().day().hour().minute()))")
@@ -31,18 +36,18 @@ struct WeatherView: View {
                                 .font(.system(size: 40))
                             Spacer()
                                 .frame(height:10)
-                            Text(weather.weather[0].main)
+                            Text(weather.weather[0].main!)
                         }
                         .frame(width: 150, alignment: .leading)
                         Spacer()
-                        Text(weather.main.feels_like.roundDouble() + "°")
-                            .font(.system(size: 100))
+                        Text(weather.main.feels_like!.roundDouble() + "°")
+                            .font(.system(size: 60))
                             .fontWeight(.bold)
                             .padding()
                     }
                     
                     Spacer()
-                        .frame(height:  30)
+                        .frame(height:  10)
                     
                     AsyncImage(url: URL(string: "https://cdn.pixabay.com/photo/2020/01/24/21/33/city-4791269_960_720.png")) { image in
                         image
@@ -68,15 +73,15 @@ struct WeatherView: View {
                         .padding(.bottom)
                     
                     HStack {
-                        WeatherRow(logo: "thermometer", name: "Min temp", value: (weather.main.temp_min.roundDouble() + ("°")))
+                        WeatherRow(logo: "thermometer.snowflake", name: "Min temp", value: (weather.main.temp_min!.roundDouble() + ("°")))
                         Spacer()
-                        WeatherRow(logo: "thermometer", name: "Max temp", value: (weather.main.temp_max.roundDouble() + "°"))
+                        WeatherRow(logo: "thermometer.sun", name: "Max temp", value: (weather.main.temp_max!.roundDouble() + "°"))
                     }
                     
                     HStack {
-                        WeatherRow(logo: "wind", name: "Wind speed", value: (weather.wind.speed.roundDouble() + " m/s"))
+                        WeatherRow(logo: "wind", name: "Wind speed", value: (weather.wind.speed!.roundDouble() + " m/s"))
                         Spacer()
-                        WeatherRow(logo: "humidity", name: "Humidity", value: "\(weather.main.humidity)%")
+                        WeatherRow(logo: "humidity", name: "Humidity", value: "\(weather.main.humidity!)%")
                     }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)

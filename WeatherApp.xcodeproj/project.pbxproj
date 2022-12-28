@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B90B0E39295B1FC40007DC32 /* WeatherSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90B0E38295B1FC40007DC32 /* WeatherSearchBar.swift */; };
 		B9C09E672959E0F300F02792 /* WeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C09E662959E0F300F02792 /* WeatherAppApp.swift */; };
 		B9C09E692959E0F300F02792 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C09E682959E0F300F02792 /* ContentView.swift */; };
 		B9C09E6B2959E0F500F02792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C09E6A2959E0F500F02792 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B90B0E38295B1FC40007DC32 /* WeatherSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSearchBar.swift; sourceTree = "<group>"; };
 		B9C09E632959E0F300F02792 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9C09E662959E0F300F02792 /* WeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppApp.swift; sourceTree = "<group>"; };
 		B9C09E682959E0F300F02792 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				B9C09E8A295A1AB000F02792 /* WeatherRow.swift */,
+				B90B0E38295B1FC40007DC32 /* WeatherSearchBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				B9C09E7D2959FAFA00F02792 /* WeatherManager.swift in Sources */,
 				B9C09E692959E0F300F02792 /* ContentView.swift in Sources */,
 				B9C09E84295A101E00F02792 /* ModelData.swift in Sources */,
+				B90B0E39295B1FC40007DC32 /* WeatherSearchBar.swift in Sources */,
 				B9C09E672959E0F300F02792 /* WeatherAppApp.swift in Sources */,
 				B9C09E802959FD6C00F02792 /* WeatherModel.swift in Sources */,
 				B9C09E88295A118100F02792 /* Extensions.swift in Sources */,
