@@ -29,7 +29,7 @@ class WeatherManager {
     
     
     func getWeatherForCity(cityName:String) async throws -> WeatherModel {
-        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(cityName)&appid=2b8ea515dfa57755bf9bf822919ffe94") else {
+        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(cityName)&appid=48532a5e16bd27acbb55cf0c9b778afc") else {
             fatalError("missing url")
         }
         
